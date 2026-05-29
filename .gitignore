@@ -1,0 +1,131 @@
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+
+# ============================================================
+# VSCode
+# ============================================================
+.vscode/*
+!.vscode/settings.json       # 팀 공유할 설정은 예외 처리 (필요시 주석 해제)
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.history/
+*.code-workspace
+
+
+# ============================================================
+# Obsidian
+# ============================================================
+.obsidian/*
+!.obsidian/app.json          # 앱 기본 설정 (선택적 공유)
+.obsidian/appearance.json
+# 아래는 개인 캐시/작업공간이라 항상 ignore
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+.trash/
+
+
+# ============================================================
+# Claude
+# ============================================================
+# Claude 개인 설정 / 캐시는 ignore
+.claude/settings.local.json
+.claude/todos/
+.claude/cache/
+
+# Claude 스킬, rules, 프로젝트 설정은 GitHub에 올라가야 함 → 예외 처리
+# .claude/ 전체를 ignore하고 싶다면 아래처럼 사용
+# .claude/*
+# !.claude/CLAUDE.md
+# !.claude/commands/
+# !.claude/skills/
+# !.claude/rules/
+
+
+# ============================================================
+# Node.js
+# ============================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.pnpm-store/
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+*.pyo
+
+
+# ============================================================
+# 환경변수 / 시크릿
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+credentials/
+
+
+# ============================================================
+# 로그 / 임시파일
+# ============================================================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# 기타 에디터 (JetBrains, Vim, Emacs 등)
+# ============================================================
+.idea/
+*.iml
+*.iws
+*.ipr
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+.netrwhist
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock

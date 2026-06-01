@@ -2,9 +2,8 @@ import { NextResponse } from 'next/server'
 import { serverRegistry } from '@/infra/registry'
 
 export async function POST() {
-  const result = await serverRegistry.auth.signOut()
-  if (!result.ok) {
-    return NextResponse.json({ error: result.error }, { status: 400 })
-  }
-  return NextResponse.json({ ok: true })
+  await serverRegistry.auth.signOut()
+  const res = NextResponse.json({ ok: true })
+  res.cookies.set('sb-access-token', '', { httpOnly: true, maxAge: 0, path: '/' })
+  return res
 }
